@@ -1,5 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Damion|Raleway:300,400,700,800,900');
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	font-size: 12px;
+	background: #e7e7e7;
+}
+
 .page {
 	width: 100%;
 	min-height: 100vh;
-	background: #f7f7f7;
 }
+
+.cover {
+	background: url('../images/duane_andre.png') #e7e7e7 no-repeat bottom right;
+	background-size: auto;
+	max-width: 1480px;
+	margin: 0 auto; 
+}
+
+.pre-title {
+	padding: 5em 0 0;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-weight: 700;
+	text-align: center;
+	width: 100%
+}
+
+.pre-title span {
+	color: #fff;
+	background: #333;
+	padding: 4px 8px 4px 10px;
+	font-size: 85%;
+}
+
+.title {
+	font-family: 'Damion', cursive;
+	text-align: center;
+	font-size: 65px;
+	margin: .2em 0 0; 
+}
+
+.cover-footer {
+	margin-top: 8em;
+	padding: 0;
+}
+
+.slogan-frame {
+	border: solid 7px #e6f708;
+	width: 130px;
+	height: 50vh;
+	margin: 50px 0 0 60vw;
+	padding: 10px;
+	display: table;
+}
+
+.slogan-frame p {
+	font-weight: 800;
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #e6f708;
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+.sticker {
+	background: #e6f708;
+	width: 120px;
+	padding: 10px 0 5px 20px;
+	text-transform: uppercase;
+	font-weight: 800;
+
+    position: fixed;
+    right: -50px;
+    top: 30vh;
+
+	-ms-transform: rotate(-90deg); 
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.sticker span {
+	letter-spacing: 4px;
+	font-size: 80%;
+	font-weight: 700;
+}
+
+@media (min-width: 1480px){
+	.slogan-frame {
+		margin-left: 60vw;
+	}
+}
+
+@media (min-width: 1800px){
+	.slogan-frame {
+		margin-left: 35vw;
+	}
+}
+
+@media (max-width: 768px){
+	.cover {
+		background-size: auto 100%; 
+		background-position: bottom center;
+	}
+
+	.slogan-frame {
+		height: 40vh;
+		margin: 50px 0 0 26vw;
+		padding: 10px;
+		display: table;
+	}
+
+	.cover-footer {
+		color: #bbb;
+	}
+}
+
+
+
+
+
+
