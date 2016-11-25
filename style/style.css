@@ -93,14 +93,14 @@ body {
 
 .sticker {
 	background: #e6f708;
-	width: 120px;
+	width: 104px;
 	padding: 10px 0 5px 20px;
 	text-transform: uppercase;
 	font-weight: 800;
 	text-align: left;
 
     position: fixed;
-    right: -50px;
+    right: -42px;
     top: 30vh;
 
 	-ms-transform: rotate(-90deg); 
@@ -159,7 +159,7 @@ and (max-device-width : 1024px)  {
 	}
 
 	.slogan-frame {
-		height: 40vh;
+		height: 50vh;
 		margin: 50px 0 0 26vw;
 	}
 
@@ -177,6 +177,10 @@ and (max-device-width : 1024px)  {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) {
+	.slogan-frame {
+		height: 45vh;
+	}
+
 	.pre-title {
 		padding-top: 3em;
 		font-size: 10px;
