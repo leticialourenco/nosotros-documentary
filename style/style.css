@@ -1,10 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Damion|Raleway:300,400,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,800,900');
 
 body {
 	font-family: 'Raleway', sans-serif;
 	color: #333;
 	font-size: 12px;
 	background: #e7e7e7;
+}
+
+::selection { 
+	background: #222;
+	color: #e6f708;
+}
+
+::-moz-selection { 
+	background: #222;
+	color: #e6f708;
+}
+
+.logo {
+	width: 230px;
+	margin: .5em 0 0;
 }
 
 .page {
@@ -17,6 +32,7 @@ body {
 	background-size: auto;
 	max-width: 1480px;
 	margin: 0 auto; 
+	text-align: center;
 }
 
 .pre-title {
@@ -36,10 +52,18 @@ body {
 }
 
 .title {
-	font-family: 'Damion', cursive;
+	font-weight: 800;
+	font-size: 23px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #e6f708;
 	text-align: center;
-	font-size: 65px;
-	margin: .2em 0 0; 
+	margin-top: 20px;
+}
+
+.title span {
+	font-weight: 100;
+	opacity: 0.5;
 }
 
 .cover-footer {
@@ -48,6 +72,7 @@ body {
 }
 
 .slogan-frame {
+	text-align: left;
 	border: solid 7px #e6f708;
 	width: 130px;
 	height: 50vh;
@@ -72,6 +97,7 @@ body {
 	padding: 10px 0 5px 20px;
 	text-transform: uppercase;
 	font-weight: 800;
+	text-align: left;
 
     position: fixed;
     right: -50px;
@@ -88,7 +114,11 @@ body {
 	font-weight: 700;
 }
 
-
+.info {
+	background: #333;
+	color: #fff;
+	height: 180px;
+}
 
 /* Desktop adjustments
  */
@@ -135,6 +165,10 @@ and (max-device-width : 1024px)  {
 
 	.cover-footer {
 		color: #bbb;
+	}
+
+	.title {
+		font-size: 20px;
 	}
 }
 
